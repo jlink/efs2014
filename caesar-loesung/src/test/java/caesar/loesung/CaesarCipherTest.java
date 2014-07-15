@@ -34,4 +34,20 @@ public class CaesarCipherTest {
         assertEquals('d', cipher.encrypt('y', 5));
         assertEquals('a', cipher.encrypt('b', 25));
     }
+
+    @Test
+    public void encryptingEmptyTextYieldsEmptyText() {
+        assertEquals("", cipher.encryptText("", anyKey()));
+    }
+
+    @Test
+    public void encryptingTextWithOnlyKnownCharacters() {
+        assertEquals("b", cipher.encryptText("a", 1));
+        assertEquals("de", cipher.encryptText("ab", 3));
+        assertEquals("zgzkkny", cipher.encryptText("ahalloz", 25));
+    }
+
+    private int anyKey() {
+        return 1;
+    }
 }
