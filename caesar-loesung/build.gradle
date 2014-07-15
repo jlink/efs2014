@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+task copyDeps(type: Copy) {
+  from configurations.runtime
+  from configurations.compile
+  from configurations.testCompile
+  into '../libs'
+}
+
+task initSourceFolders << { 
+  	sourceSets*.java.srcDirs*.each { it.mkdirs() }
+  	sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+}
+
+repositories {
+   flatDir {
+       dirs '../libs'
+   }
+
+   //mavenCentral()
+}
+
+
+dependencies {
+    testCompile 'junit:junit:4.11'
+	testCompile 'org.mockito:mockito-all:1.8.4'
+}
+
+//idea.project.ipr {
+//    withXml { provider ->
+//        provider.node.component.find { it.@name == 'VcsDirectoryMappings' }.mapping.@vcs = 'Git'
+//    }
+//}
+
