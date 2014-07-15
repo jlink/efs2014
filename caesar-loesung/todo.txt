@@ -7,12 +7,12 @@ Step 1
 
 Step 2
 + Encrypt empty string
-+ Encrypt text of length 1
++ Encrypt string of length 1
 + Encrypt string with 2 characters
 + Encrypt string with many characters
-- Encrypt string with characters not in alphabet
-- Encrypt mixed string
-- Encrypt string with upper case characters
++ Check that only lower case 'a' to 'z' are accepted
++ Encrypt mixed string
++ Encrypt string with upper case characters
 
 Step 3
 - Encrypt string with different alphabet, e.g. containing umlauts

@@ -22,8 +22,14 @@ public class CaesarCipher {
     public String encryptText(String clearText, int key) {
         String encryptedText = "";
         for (char unencrypted : clearText.toCharArray()) {
-            encryptedText += encrypt(unencrypted, key);
+            unencrypted = Character.toLowerCase(unencrypted);
+            if (isAccepted(unencrypted))
+                encryptedText += encrypt(unencrypted, key);
         }
         return encryptedText;
+    }
+
+    public boolean isAccepted(char unencrypted) {
+        return unencrypted >= 'a' && unencrypted <= 'z';
     }
 }
