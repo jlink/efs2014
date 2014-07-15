@@ -1,0 +1,15 @@
+Step 1
+- Encode single character with key 0
+- Encode single character with key 1 (no overflow)
+- Encode 'z' with key 1 (overflow)
+- Encode single character with key > 1
+- Encode character with key 25 and overflow
+
+Step 2
+- Encode empty string
+- Encode string with 2 characters
+- Encode string with many characters
+- Encode string with characters not in alphabet
+- Encode mixed string
+- Encode string with upper case characters
+- Encode string with different alphabet, e.g. containing umlauts
