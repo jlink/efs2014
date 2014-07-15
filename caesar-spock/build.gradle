@@ -33,9 +33,3 @@ dependencies {
     testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
 }
 
-//idea.project.ipr {
-//    withXml { provider ->
-//        provider.node.component.find { it.@name == 'VcsDirectoryMappings' }.mapping.@vcs = 'Git'
-//    }
-//}
-

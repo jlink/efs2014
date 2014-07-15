@@ -22,15 +22,7 @@ repositories {
    //mavenCentral()
 }
 
-
 dependencies {
     testCompile 'junit:junit:4.11'
 	testCompile 'org.mockito:mockito-all:1.8.4'
 }
-
-//idea.project.ipr {
-//    withXml { provider ->
-//        provider.node.component.find { it.@name == 'VcsDirectoryMappings' }.mapping.@vcs = 'Git'
-//    }
-//}
-
