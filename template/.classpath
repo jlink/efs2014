@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="lib" path="/Users/link/Documents/git-projects/efs2014/libs/junit-4.11.jar" exported="true"/>
+	<classpathentry kind="lib" path="/Users/link/Documents/git-projects/efs2014/libs/mockito-all-1.8.4.jar" exported="true"/>
+</classpath>
