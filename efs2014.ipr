@@ -151,6 +151,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/caesar-schritt1/caesar-schritt1.iml" filepath="$PROJECT_DIR$/caesar-schritt1/caesar-schritt1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caesar-schritt2/caesar-schritt2.iml" filepath="$PROJECT_DIR$/caesar-schritt2/caesar-schritt2.iml" />
       <module fileurl="file://$PROJECT_DIR$/template/template.iml" filepath="$PROJECT_DIR$/template/template.iml" />
     </modules>
   </component>

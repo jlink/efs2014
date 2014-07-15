@@ -1,0 +1,15 @@
+Step 1
++ Encrypt single character with key 0
++ Encrypt single character with key 1 (no overflow)
++ Encrypt 'z' with key 1 (overflow)
++ Encrypt single character with key > 1
++ Encrypt character with key 25 and overflow
+
+Step 2
+- Encrypt empty string
+- Encrypt string with 2 characters
+- Encrypt string with many characters
+- Encrypt string with characters not in alphabet
+- Encrypt mixed string
+- Encrypt string with upper case characters
+- Encrypt string with different alphabet, e.g. containing umlauts
