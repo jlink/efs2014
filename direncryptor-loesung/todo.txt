@@ -1,0 +1,28 @@
+Verschlüsselung
+===============
+- Leeres Verzeichnis: Nichts passiert
+- Verzeichnis mit einer Datei
+    - source wird verschlüsselt zu source.enc
+    - source wird gelöscht
+    - Streams werden ordnungsgemäß geschlossen
+- Verzeichnis mit mehreren Dateien
+- Exception bei Verschlüsselung:
+    - Originaldatei bleibt erhalten
+    - Keine verschlüsselte Datei vorhanden
+
+File Encryption Listener
+========================
+- Erfolgreiche Verschlüsselung einer Datei
+- Exception bei Verschlüsselung einer Datei
+- Mehrere Dateien
+- Setzen des Listener auf null
+
+Mehrere File Encryption Listener
+================================
+- Registrierung mehrerer Listener und Benachrichtigung
+- Deregistrierung eines Listener
+- Mehrfachregistrierung eines Listener
+
+Konfiguration
+=============
+Bitte nochmal mit dem Fachbereich klären
