@@ -3,11 +3,12 @@ package direncryptor;
 import java.io.File;
 
 public class DirectoryEncryptor {
-    public DirectoryEncryptor(StreamEncryptor streamEncryptor, File directory) {
-        
+    public DirectoryEncryptor(StreamEncryptor streamEncryptor) {
     }
 
     public void registerEncryptionListener(FileEncryptionListener encryptionListener) {
+    }
 
+    public void encryptDirectory(File directory) {
     }
 }
