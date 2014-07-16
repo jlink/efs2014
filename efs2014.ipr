@@ -148,12 +148,20 @@
       </item>
     </group>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="link">
+      <words>
+        <w>encryptor</w>
+      </words>
+    </dictionary>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/caesar-loesung/caesar-loesung.iml" filepath="$PROJECT_DIR$/caesar-loesung/caesar-loesung.iml" />
       <module fileurl="file://$PROJECT_DIR$/caesar-schritt1/caesar-schritt1.iml" filepath="$PROJECT_DIR$/caesar-schritt1/caesar-schritt1.iml" />
       <module fileurl="file://$PROJECT_DIR$/caesar-schritt2/caesar-schritt2.iml" filepath="$PROJECT_DIR$/caesar-schritt2/caesar-schritt2.iml" />
       <module fileurl="file://$PROJECT_DIR$/caesar-spock/caesar-spock.iml" filepath="$PROJECT_DIR$/caesar-spock/caesar-spock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/direncryptor/direncryptor.iml" filepath="$PROJECT_DIR$/direncryptor/direncryptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/template/template.iml" filepath="$PROJECT_DIR$/template/template.iml" />
     </modules>
   </component>
