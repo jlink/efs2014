@@ -2,6 +2,7 @@ package direncryptor.loesung;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.InOrder;
 
 import java.io.File;
 
@@ -49,4 +50,21 @@ public class DirectoryEncryptorTest {
         StreamBasedFileEncryptor defaultFileEncryptor = (StreamBasedFileEncryptor) encryptor.getFileEncryptor();
         assertSame(streamEncryptor, defaultFileEncryptor.getStreamEncryptor());
     }
+
+    @Test
+    public void encryptionTargetIsEncryptedByFileEncryptorAndSourceIsDeletedAfterwards() throws Exception {
+        File directory = new File("./");
+        File encryptionSource = new File("test.txt");
+        File encryptionTarget = new File("test.txt.enc");
+        when(directoryService.listFilesInDirectory(any(File.class))).thenReturn(new File[] {encryptionSource});
+
+        DirectoryEncryptor encryptor = new DirectoryEncryptor(fileEncryptor, directoryService);
+
+        encryptor.encryptDirectory(directory);
+
+        InOrder orderOfFileEncryption = inOrder(fileEncryptor, directoryService);
+        orderOfFileEncryption.verify(fileEncryptor).encrypt(encryptionSource, encryptionTarget);
+        orderOfFileEncryption.verify(directoryService).deleteFile(encryptionSource);
+    }
+
 }

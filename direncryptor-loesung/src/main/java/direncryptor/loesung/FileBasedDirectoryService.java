@@ -7,4 +7,9 @@ public class FileBasedDirectoryService implements DirectoryService {
     public File[] listFilesInDirectory(File directory) {
         return new File[0];
     }
+
+    @Override
+    public void deleteFile(File encryptionSource) {
+
+    }
 }
