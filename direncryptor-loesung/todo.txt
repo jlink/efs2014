@@ -1,6 +1,8 @@
 Verschlüsselung
 ===============
-- Leeres Verzeichnis: Nichts passiert
++ Leeres Verzeichnis: Nichts passiert
++ Default directory service: FileBasedDirectoryService
++ StreamEncryptor wird im Konstruktor in FileEncryptor gewrapped
 - Verzeichnis mit einer Datei
     - source wird verschlüsselt zu source.enc
     - source wird gelöscht
@@ -9,6 +11,7 @@ Verschlüsselung
 - Exception bei Verschlüsselung:
     - Originaldatei bleibt erhalten
     - Keine verschlüsselte Datei vorhanden
+- StreamBasedFileEncryptor benutzt stream encryptor
 
 Progress Indicator
 ==================
