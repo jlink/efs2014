@@ -1,5 +1,6 @@
 package direncryptor;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
@@ -11,7 +12,5 @@ public interface StreamEncryptor {
      * @param source
      * @param target
      */
-    void encrypt(InputStream source, OutputStream target);
-
-    String description();
+    void encrypt(InputStream source, OutputStream target) throws IOException;
 }
