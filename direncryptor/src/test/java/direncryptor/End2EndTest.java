@@ -13,7 +13,6 @@ import java.util.Arrays;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class End2EndTest implements ProgressIndicator {
     @Rule
@@ -42,7 +41,7 @@ public class End2EndTest implements ProgressIndicator {
         String[] resultingFiles = directoryToEncrypt.list();
         Arrays.sort(resultingFiles);
 
-        assertArrayEquals(new String[] {"file1.txt.enc", "file2.bin.enc", "file3.enc"}, resultingFiles);
+        assertArrayEquals(new String[]{"file1.txt.enc", "file2.bin.enc", "file3.enc"}, resultingFiles);
 
         byte[] file1EncryptedContents = Files.readAllBytes(new File(directoryToEncrypt, "file1.txt.enc").toPath());
 
