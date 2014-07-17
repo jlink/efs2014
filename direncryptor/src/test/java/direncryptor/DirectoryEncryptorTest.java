@@ -7,6 +7,6 @@ public class DirectoryEncryptorTest {
     public void test() throws Exception {
         // DirectoryEncryptor encryptor = new DirectoryEncryptor(streamEncryptor);
         // encryptor.setProgressIndicator(indicator);
-        // encryptor.encrypt(directory);
+        // encryptor.encryptDirectory(directory);
     }
 }
