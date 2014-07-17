@@ -56,6 +56,7 @@ public class End2EndTest implements ProgressIndicator {
         writer.newLine();
         writer.write("Second line");
         writer.newLine();
+        writer.close();
         return file1;
     }
 

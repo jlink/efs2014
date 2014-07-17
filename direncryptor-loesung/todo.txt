@@ -18,8 +18,9 @@ FileBasedDirectoryService
 
 StreamBasedFileEncryptor
 ========================
-- Encryption benutzt internen Stream Encryptor
-- Input und Output-Streams werden nach Encryption geschlossen
++ Encryption benutzt internen Stream Encryptor
++ Input und Output-Streams werden nach Encryption und bei Fehler geschlossen
+    - Wie kann ich das testen?
 
 Progress Indicator
 ==================
