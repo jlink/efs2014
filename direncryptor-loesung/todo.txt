@@ -6,13 +6,15 @@ Verschlüsselung
 + Verzeichnis mit einer Datei
     + source wird verschlüsselt zu source.enc
     + source wird anschließend gelöscht
-- Verzeichnis mit mehreren Dateien
-- Exception bei Verschlüsselung:
-    - Originaldatei bleibt erhalten
-    - Keine verschlüsselte Datei vorhanden
++ Verzeichnis mit mehreren Dateien
++ Exception bei Verschlüsselung:
+    + Originaldatei bleibt erhalten
+    + Target-Datei wird gelöscht
 
 FileBasedDirectoryService
 =========================
++ Delegiere Aufrufe an File
++ Nur Dateien und keine Directories werden von listFiles geliefert
 
 StreamBasedFileEncryptor
 ========================

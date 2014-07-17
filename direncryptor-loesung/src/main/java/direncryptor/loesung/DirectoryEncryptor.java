@@ -19,12 +19,16 @@ public class DirectoryEncryptor {
     public void setProgressIndicator(ProgressIndicator progressIndicator) {
     }
 
-    public void encryptDirectory(File directory) throws IOException {
+    public void encryptDirectory(File directory) {
         File[] filesToEncrypt = directoryService.listFilesInDirectory(directory);
         for (File source: filesToEncrypt) {
             File target = new File(source.getParentFile(), source.getName() + ".enc");
-            fileEncryptor.encrypt(source, target);
-            directoryService.deleteFile(source);
+            try {
+                fileEncryptor.encrypt(source, target);
+                directoryService.deleteFile(source);
+            } catch (IOException ioexception) {
+                directoryService.deleteFile(target);
+            }
         }
     }
 
