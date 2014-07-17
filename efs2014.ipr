@@ -163,7 +163,6 @@
       <module fileurl="file://$PROJECT_DIR$/caesar-spock/caesar-spock.iml" filepath="$PROJECT_DIR$/caesar-spock/caesar-spock.iml" />
       <module fileurl="file://$PROJECT_DIR$/direncryptor/direncryptor.iml" filepath="$PROJECT_DIR$/direncryptor/direncryptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/direncryptor-loesung/direncryptor-loesung.iml" filepath="$PROJECT_DIR$/direncryptor-loesung/direncryptor-loesung.iml" />
-      <module fileurl="file://$PROJECT_DIR$/template/template.iml" filepath="$PROJECT_DIR$/template/template.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
