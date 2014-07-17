@@ -14,7 +14,7 @@ import java.util.Arrays;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
-public class DirectoryEncryptorIntegrationTest implements ProgressIndicator {
+public class End2EndTest implements ProgressIndicator {
     @Rule
     public TemporaryFolder folder = new TemporaryFolder();
     private double lastProgress;
