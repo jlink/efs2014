@@ -10,18 +10,14 @@ Verschlüsselung
     - Originaldatei bleibt erhalten
     - Keine verschlüsselte Datei vorhanden
 
-File Encryption Listener
-========================
+Progress Indicator
+==================
+- Verschlüsselung leeres Verzeichnis: Am Ende auf 1.0
 - Erfolgreiche Verschlüsselung einer Datei
-- Exception bei Verschlüsselung einer Datei
+    - Am Anfang auf 0.0
+    - Am Ende auf 1.0
 - Mehrere Dateien
-- Setzen des Listener auf null
-
-Mehrere File Encryption Listener
-================================
-- Registrierung mehrerer Listener und Benachrichtigung
-- Deregistrierung eines Listener
-- Mehrfachregistrierung eines Listener
+- Setzen des Indicator auf null
 
 Konfiguration
 =============
